@@ -1,7 +1,13 @@
 /*Header*/
+body {
+	margin: 0;
+	padding: 0;
+}
 .headerContainer {
+	position: relative;
 	height: 100vh;
-	background-image: url('./bg.jpg');
+	background-image : url('./bg.jpg');
+	background-position: center;
 	background-size : cover;
 }
 /*Header - Topbar*/
@@ -30,6 +36,8 @@
 }
 
 .menu > a {
+	font-family: Arial;
+	/*font-weight: inherit;*/
 	display: flex;
 	color: white;
 	text-decoration: none;
@@ -48,4 +56,91 @@
 .menu > a:nth-child(1) svg{
 	margin-right: 5px;
 	transform: scale(.8);
+}
+
+
+/*CSS form book*/
+.bookform {
+	font-family: "Varela Round";
+	padding: 1rem 2rem;
+	background-color: white;
+	width: 441px;
+	height: 475px;
+	position: absolute;
+	top : 120px;
+	left: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.bookform > *{
+	margin : auto 0;
+}
+
+.bookform > .where-div, .bookform > .guests-div {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookform > * > *{
+	margin: 0.2rem 0;
+}
+
+.bookform input {
+	border : none;
+	border-top: 1px solid rgba(0,0,0,.1);
+	border-bottom:  1px solid rgba(0,0,0,.1);
+	height: 3rem;
+	outline: none;
+}
+
+.bookform input{
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+.bookform input:focus {
+	border : 1px solid rgb(0,132,137);
+	box-shadow: 0 0 1px rgb(0,132,137);
+	border-radius: 5px;
+}
+
+.bookform .check-in-input:focus,.bookform .check-out-input:focus {
+	border-radius: 0;
+}	
+
+.bookform .check-div > div{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+}
+
+.bookform .check-div > div > * {
+	flex-grow : 1;
+}
+
+.bookform button {
+	margin-left : auto;
+	width: 25%;
+	padding: 15px;
+	cursor: pointer;
+	background-color: #ff5a5f;
+	border : none;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+.headerContainer .info {
+	position : absolute;
+	bottom : 20px;
+	right: 50px;
+	color: white;
+	text-decoration: none;
+}
+
+.headerContainer .info:hover {
+	text-decoration: underline;
 }
