@@ -1,0 +1,51 @@
+/*Header*/
+.headerContainer {
+	height: 100vh;
+	background-image: url('./bg.jpg');
+	background-size : cover;
+}
+/*Header - Topbar*/
+.topbar {
+	/*border: 1px solid red;*/
+	height: 4rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.logo {
+	height: 100%;
+	width: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.menu {
+	height: 100%;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.menu > a {
+	display: flex;
+	color: white;
+	text-decoration: none;
+	align-items: center;
+	height: 100%;
+	padding: 15px;
+	box-sizing: border-box;
+	border-bottom: 1px solid transparent;
+	transition: 1s border-bottom;
+}
+
+.menu > a:hover {
+	border-bottom: 1px solid white;
+}
+
+.menu > a:nth-child(1) svg{
+	margin-right: 5px;
+	transform: scale(.8);
+}
