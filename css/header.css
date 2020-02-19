@@ -172,7 +172,6 @@ header {
 
 .bookform .checklist-guests > input[type="checkbox"]{
 	position: relative;
-	z-index: 1;
 }
 
 header .info {
@@ -181,7 +180,6 @@ header .info {
 	right: 50px;
 	color: white;
 	text-decoration: none;
-	z-index: 0;
 }
 
 header .info:hover {
@@ -204,6 +202,19 @@ header .info:hover {
 	transition: .3s all;
 }
 
+.languages-form {
+	width: 600px;
+	height: 600px;
+	background-color: white;
+}
 
-
-
+.backgroundPopup {
+	top: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
