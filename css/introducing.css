@@ -1,0 +1,67 @@
+.introducing {
+	width: 100%;
+	font-size: 16px;
+	height: 623px;
+	display: flex;
+	flex-direction: column;
+	/*background-color: red;*/
+}
+
+.introducing > * {
+	/*border : 1px solid red;*/
+}
+
+.introducing .title {
+	font-size: 1.5rem;
+}
+
+.introducing .description {
+	font-size: 1.2rem;
+	height: 15%;
+	width: 50%;
+	color: #333;
+}
+.introducing .list-items {
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction : row;
+	padding: 0;
+}
+
+.introducing .list-items > a{	
+	box-sizing: border-box;
+	/*border : 1px solid blue;*/
+	width : calc(100% / 4);
+	text-decoration : none;
+}
+
+.introducing .list-items > a:visited {
+	color: black;
+}
+
+.introducing .list-items .item {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	/*background-color : blue;*/
+}
+
+.introducing .list-items .item .avatar {
+	border-radius : 5px 5px 0 0;
+}
+
+.introducing .list-items .item .avatar img {
+	width : 100%;
+	display: block;
+	border-radius: 10px;	
+}
+
+.introducing .list-items .item .avatar ~ * {
+	margin-top: 0.5rem;
+}
+
+.introducing > a {
+	margin-top: 2rem;
+	display: flex;
+}
