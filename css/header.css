@@ -1,6 +1,7 @@
 /*Header*/
 header {
 	position: relative;
+	width: 100%;
 	height: 100vh;
 	background-image : url('/images/bg.jpg');
 	background-position: center;
@@ -23,7 +24,7 @@ header {
 	color: white;
 }
 
-.menu {
+header .topbar .menu {
 	height: 100%;
 	flex-grow: 1;
 	display: flex;
@@ -31,7 +32,7 @@ header {
 	justify-content: flex-end;
 }
 
-.menu > a {
+header .topbar .menu > a {
 	font-family: Arial;
 	/*font-weight: inherit;*/
 	display: flex;
@@ -45,11 +46,11 @@ header {
 	transition: 1s border-bottom;
 }
 
-.menu > a:hover {
+header .topbar .menu > a:hover {
 	border-bottom: 1px solid white;
 }
 
-.menu > a:nth-child(1) svg{
+header .topbar .menu > a:nth-child(1) svg{
 	margin-right: 5px;
 	transform: scale(.8);
 }
@@ -172,7 +173,6 @@ header {
 
 .bookform .checklist-guests > input[type="checkbox"]{
 	position: relative;
-	z-index: 1;
 }
 
 header .info {
@@ -181,7 +181,6 @@ header .info {
 	right: 50px;
 	color: white;
 	text-decoration: none;
-	z-index: 0;
 }
 
 header .info:hover {
@@ -206,4 +205,94 @@ header .info:hover {
 
 
 
+.backgroundPopup {
+	font-family: "Varela Round";
+	top: 0;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0,0,0,.7);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
 
+.backgroundPopup .menu {
+	box-sizing: border-box;
+	padding: 20px;
+	background-color: white;
+	height: 100px;
+	width: 1032px;
+	border-radius : 10px 10px 0 0;
+}
+
+.backgroundPopup .menu .close ~ * {
+	margin-top: 10px;
+	display: block;
+}
+
+.backgroundPopup .menu .close {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	border-bottom : 1px solid rgba(0,0,0,.4);
+
+}
+
+.backgroundPopup .menu .close span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	font-size: 3rem;
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+	transform: translateY(-50%) rotate(45deg);
+	cursor: pointer;
+}
+
+
+.backgroundPopup .menu .close span:hover {
+	background-color: #EEE;
+}
+
+
+
+
+.languages-form {
+	width: 1032px;
+	height: 60%;
+	background-color: white;
+}
+
+.languages-form .languages {
+	display: flex;
+	flex-wrap: wrap;
+	overflow-y : scroll;
+	padding: 0px 20px;
+	height: 100%;
+}
+
+
+.languages-form .languages .language {
+	width: calc(100% / 5);
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	padding: 10px 20px;
+}
+
+.languages-form .languages .language:nth-child(1){
+	border: 1px solid black;
+} 
+
+.languages-form .languages .language span:nth-child(2){
+	font-size: 14px;
+	color: rgba(1,1,1,.7);
+}
