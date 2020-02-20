@@ -1,0 +1,68 @@
+.featured {
+	width: 100%;
+	font-size: 16px;
+	height: 489px;
+	display: flex;
+	flex-direction: column;
+	/*background-color: red;*/
+}
+
+.featured > * {
+	border : 1px solid blue;
+}
+
+.featured .title {
+	font-size: 1.5rem;
+}
+
+.featured .description {
+	font-size: 1.2rem;
+	height: 15%;
+	width: 50%;
+	color: #333;
+}
+.featured .list-items {
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction : row;
+	padding: 0;
+	/*overflow: hidden;*/
+}
+
+.featured .list-items > a:visited {
+	color: black;
+}
+
+.featured .list-items .item {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	box-sizing: border-box;
+	width : calc(100% / 3);
+	text-decoration : none;
+	/*background-color : blue;*/
+}
+
+.featured .list-items .item .avatar {
+	overflow: hidden;
+	border-radius : 5px 5px 0 0;
+	flex-grow: 1;
+	overflow: hidden;
+	background-color: #EEE;
+}
+
+.featured .list-items .item .avatar img {
+	height: 100%;
+	display: block;
+	border-radius: 10px;	
+}
+
+.featured .list-items .item .avatar ~ * {
+	margin-top: 0.5rem;
+}
+
+.featured > a {
+	margin-top: 2rem;
+	display: flex;
+}
