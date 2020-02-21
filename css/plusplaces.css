@@ -1,0 +1,39 @@
+.plusplaces {
+	width: 100%;
+	font-size: 16px;
+	height: 376px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.plusplaces > * {
+}
+
+.plusplaces .title {
+	font-size: 1.5rem;
+}
+
+.plusplaces .description {
+	font-size: 1.2rem;
+	height: 10%;
+	color: #333;
+}
+.plusplaces a {
+	flex-grow: 1;
+	background-image: url('https://a0.muscache.com/4ea/air/v2/pictures/ea6285d9-5352-4447-b13d-b39bfc92dfe5.jpg?t=c:w1131-h343,r:w1131-h343-sfit,e:fjpg-c75');
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.plusplaces a div
+{
+	width: 80px;
+	height: 40px;
+	background-color: rgba(0,0,0,.7);
+}
+
