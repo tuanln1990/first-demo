@@ -1,11 +1,16 @@
+
 .featured {
+	/* width : 100% when join to indexhtml &*/
 	width: 100%;
 	font-size: 16px;
 	height: 489px;
 	display: flex;
 	flex-direction: column;
 	/*background-color: red;*/
+	position: relative;
 	overflow-x: hidden;
+	padding: 0 5px;
+	box-sizing: border-box;
 }
 
 .featured > * {
@@ -31,7 +36,7 @@
 	/*flex-wrap: wrap;*/
 	flex-direction : row;
 	padding: 0;
-	left : calc(-100%/3*0);
+	left: 0;
 }
 
 .featured .list-items > a:visited {
@@ -70,4 +75,24 @@
 .featured > a {
 	margin-top: 2rem;
 	display: flex;
+}
+
+
+.featured .left-button, .featured .right-button {
+	width: 30px;
+	height: 30px;
+	background-color: rgba(0,255,0,1);
+	position: absolute;
+	top: 45%;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.featured .left-button {
+	left : -1px;
+	display: none;
+}
+
+.featured .right-button {
+	right: 4px;
 }

@@ -2,6 +2,7 @@
 @import url('./explore.css');
 @import url('./plusplaces.css');
 @import url('./introducing.css');
+@import url('./featured.css');
 body {
 	padding: 0;
 	margin: 0;
@@ -12,7 +13,7 @@ body {
 	overflow-x: hidden;
 }
 main {
-	width: 1027px;
+	width: 1026px;
 	display : flex;
 	flex-direction: column;
 	align-items: center;
@@ -20,12 +21,6 @@ main {
 
 main > .explore ~ * {
 	margin-top: 2rem;
-}
-
-main > .introducing ~ * {
-	height: 100px;
-	border : 1px solid red;
-	width: 100%;
 }
 
 footer {
