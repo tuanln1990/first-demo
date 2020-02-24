@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded',function() {
 		{
 			count += 1;
 			var nextPosition = count * widthOfPicture;
-			var i = 3;
+			var i = 10;
 		}else {
 			count -= 1;
 			var nextPosition = count * widthOfPicture;
-			i = -3;
+			i = -10;
 		}
 		console.log(nextPosition);
 		var intervalID = setInterval(function(){
-			if(i == 3)
+			if(i == 10)
 			{
 				if(left < nextPosition)
 				{
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded',function() {
 					clearInterval(intervalID);	
 				}
 			}
-			if(i == -3)
+			if(i == -10)
 			{
 				if(left > nextPosition)
 				{

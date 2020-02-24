@@ -1,20 +1,17 @@
-
+.hidden-featured {
+	overflow-x: hidden;
+}
+.parrent-featured {
+	position: relative;
+}
 .featured {
 	/* width : 100% when join to indexhtml &*/
 	width: 100%;
 	font-size: 16px;
-	height: 489px;
+	height: 540px;
 	display: flex;
 	flex-direction: column;
-	/*background-color: red;*/
-	position: relative;
-	overflow-x: hidden;
-	padding: 0 5px;
 	box-sizing: border-box;
-}
-
-.featured > * {
-	/*border : 1px solid blue;*/
 }
 
 .featured .title {
@@ -31,9 +28,7 @@
 	position: relative;
 	height: 100%;
 	width: calc(100% * 2);
-	/*flex-grow: 1;*/
 	display: flex;
-	/*flex-wrap: wrap;*/
 	flex-direction : row;
 	padding: 0;
 	left: 0;
@@ -46,11 +41,11 @@
 .featured .list-items .item {
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
 	box-sizing: border-box;
 	width : calc(100% / 6);
 	text-decoration : none;
-	/*background-color : blue;*/
+	padding: 10px;
+	/*box-sizing: border-box;*/
 }
 
 .featured .list-items .item .avatar {
@@ -64,6 +59,7 @@
 
 .featured .list-items .item .avatar img {
 	height: 100%;
+	width: 100%;
 	border-radius: 10px;
 	position : absolute;
 }
@@ -81,18 +77,25 @@
 .featured .left-button, .featured .right-button {
 	width: 30px;
 	height: 30px;
-	background-color: rgba(0,255,0,1);
+	text-align: center;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.7);
+	background-color: white;
 	position: absolute;
 	top: 45%;
 	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	cursor: pointer;
+	border : none;
+	outline: none;
 }
 
 .featured .left-button {
-	left : -1px;
+	left : -5px;
 	display: none;
 }
 
 .featured .right-button {
-	right: 4px;
+	right: -5px;
 }
